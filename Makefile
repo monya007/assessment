@@ -1,18 +1,8 @@
-include docker.mk
-
-.PHONY: test
-
-DRUPAL_VER ?= 8
-PHP_VER ?= 7.2
-
 # Defines colors for echo, eg: @echo "${GREEN}Hello World${COLOR_END}". More colors: https://stackoverflow.com/a/43670199/3090657
 YELLOW=\033[0;33m
 RED=\033[0;31m
 GREEN=\033[0;32m
 COLOR_END=\033[0;37m
-
-test:
-	cd ./tests/$(DRUPAL_VER) && PHP_VER=$(PHP_VER) ./run.sh
 
 install:
 	@echo "${YELLOW}Installing React.js application...${COLOR_END}"
