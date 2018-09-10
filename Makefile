@@ -21,7 +21,7 @@ install:
 	docker-compose up -d  --remove-orphans
 	@echo "${YELLOW}Installing Drupal...${COLOR_END}"
 	docker-compose exec php composer install
-	docker-compose exec php drush si config_installer -y --account-name=admin --account-pass=admin
+	docker-compose exec php drush si config_installer -y --account-name=admin --account-pass=admin --db-url=mysql://drupal:drupal@mariadb:3306/drupal
 	@echo "${GREEN}The platform is ready to use!${COLOR_END}"
 
 run-tests:
