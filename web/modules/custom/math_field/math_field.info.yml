@@ -1,0 +1,5 @@
+name: 'Math Field'
+type: module
+description: 'Module for test assessment that provide math field formatter.'
+package: Test
+core: 8.x

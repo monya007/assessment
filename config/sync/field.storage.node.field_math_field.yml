@@ -1,0 +1,21 @@
+uuid: 7dd01d32-47cb-49de-9016-46e8fba2340b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_math_field
+field_name: field_math_field
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

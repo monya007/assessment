@@ -1,0 +1,20 @@
+uuid: 9dbebc7a-0938-480e-b2c5-48690809bc88
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.math_field_example
+  module:
+    - user
+id: node.math_field_example.teaser
+targetEntityType: node
+bundle: math_field_example
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

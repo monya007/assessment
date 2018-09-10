@@ -1,0 +1,19 @@
+uuid: ca05e5f1-6631-4155-8227-969d226f0e62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_math_field
+    - node.type.math_field_example
+id: node.math_field_example.field_math_field
+field_name: field_math_field
+entity_type: node
+bundle: math_field_example
+label: 'Math Field'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
