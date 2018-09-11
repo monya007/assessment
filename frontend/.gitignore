@@ -7,7 +7,6 @@ dist
 node_modules
 
 # environment
-.env*
 !.env.defaults
 !.env.schema
 
