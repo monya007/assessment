@@ -20,6 +20,7 @@ Then, run install:
     make install
 
 Once started, you can access environment on url http://assessment.docker.localhost:8000 (creds admin:admin). Create math field example content and check formatter work(http://assessment.docker.localhost:8000/node/add/math_field_example).
+Navigate to http://front.assessment.docker.localhost:8000/node to see simplified front end example.
 
 ## Tests
 
