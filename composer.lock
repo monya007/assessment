@@ -7755,12 +7755,6 @@
                 "url": "https://github.com/webflo/drupal-core-require-dev.git",
                 "reference": "26775125d6b974a84c3618f8e0d8f1cd9a4091ef"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/26775125d6b974a84c3618f8e0d8f1cd9a4091ef",
-                "reference": "26775125d6b974a84c3618f8e0d8f1cd9a4091ef",
-                "shasum": ""
-            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",

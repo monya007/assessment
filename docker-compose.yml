@@ -69,21 +69,21 @@ services:
       - 'traefik.port=80'
       - 'traefik.frontend.rule=Host:${PROJECT_BASE_URL}'
 
-#  node:
-#    image: wodby/node:$NODE_TAG
-#    container_name: "${PROJECT_NAME}_node"
-#    working_dir: /app
-#    environment:
-#      BACKEND_URL: "http://${PROJECT_BASE_URL}"
-#    labels:
-#      - 'traefik.backend=node'
-#      - 'traefik.port=3000'
-#      - 'traefik.frontend.rule=Host:front.${PROJECT_BASE_URL}'
-#    expose:
-#      - "3000"
-#    command: yarn start:dev
-#    volumes:
-#      - ./reactjs:/app
+  node:
+    image: wodby/node:$NODE_TAG
+    container_name: "${PROJECT_NAME}_node"
+    working_dir: /app
+    environment:
+      BACKEND_URL: "http://${PROJECT_BASE_URL}"
+    labels:
+      - 'traefik.backend=node'
+      - 'traefik.port=3000'
+      - 'traefik.frontend.rule=Host:front.${PROJECT_BASE_URL}'
+    expose:
+      - "3000"
+    command: yarn dev
+    volumes:
+      - ./nextjs:/app
 
   portainer:
     image: portainer/portainer
