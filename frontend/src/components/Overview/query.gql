@@ -1,0 +1,15 @@
+#import "~/components/MathTeaser/fragment.gql"
+
+query ArticleOverviewQuery($offset: Int!, $limit: Int!) {
+  nodeQuery(
+    offset: $offset
+    limit: $limit
+    filter: { conditions: [{ field: "type", value: ["math_field_example"] }] }
+  ) {
+    count
+    entities {
+      id: entityId
+      ...MathTeaserFragment
+    }
+  }
+}

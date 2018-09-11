@@ -4,6 +4,7 @@ namespace Drupal\math_field\Plugin\Deriver\Fields;
 
 use Drupal\graphql\Utility\StringHelper;
 use Drupal\graphql_core\Plugin\Deriver\EntityFieldDeriverBase;
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
 
 /**
  * Prove Math Field Deriver.

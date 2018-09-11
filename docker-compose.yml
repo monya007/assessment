@@ -83,7 +83,7 @@ services:
       - "3000"
     command: yarn dev
     volumes:
-      - ./nextjs:/app
+      - ./frontend:/app
 
   portainer:
     image: portainer/portainer
