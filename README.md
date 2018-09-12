@@ -10,10 +10,9 @@ First, you need to clone this repository.
 
     git clone git@github.com:monya007/assessment.git
 
-Then, change current folder and copy .env.example to .env file.
+Then, change current folder and check .env file.
 
     cd assessment
-    cp .env.example .env
 
 Then, run install:
 
