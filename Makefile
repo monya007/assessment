@@ -5,6 +5,9 @@ GREEN=\033[0;32m
 COLOR_END=\033[0;37m
 
 install:
+	@echo "${YELLOW}Config files copy...${COLOR_END}"
+	cp .env.example .env
+	cp web/sites/example.development.services.yml web/sites/development.services.yml
 	@echo "${YELLOW}Up containers...${COLOR_END}"
 	docker-compose run node yarn install
 	docker-compose down --remove-orphans
